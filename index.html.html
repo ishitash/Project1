@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+	<link rel="stylesheet" type="text/css" href="finalassignments.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+	document.onkeydown = function(e) {
+        e = e || window.event;
+        if (e.keyCode == '37') {
+            plusSlides(-1);
+        } else if (e.keyCode == '39') {
+            plusSlides(1);
+        } else if (e.keyCode == '27') {
+			images_close();
+		}
+	}
+</script>
+<script type="text/javascript">
+	var slideIndex = 1;
+	
+
+	function plusSlides(n){
+	  showSlides(slideIndex += n);
+	}
+	showSlides(slideIndex);
+	function showSlides(n){
+	var slides = document.getElementsByClassName("common_cls");
+
+	  if (n > slides.length) {slideIndex = 1};   
+	  if (n < 1) {slideIndex = slides.length};
+
+	  for (var i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none"; 
+	      console.log(slideIndex); 
+	  	}
+	  	 gets=slides[slideIndex-1].style.display = "block"; 
+	  	 console.log(gets);
+	};
+	function images_close(){
+		off();
+		var img = document.getElementsByClassName('common_cls');
+	    var i;
+	  	for (i = 0; i < img.length; i++) {
+	    img[i].style.display = "none";
+	  };
+	}
+	
+
+	function on() {
+	  	document.getElementById("overlay").style.display = "block";
+	};
+	function off() {
+	 	document.getElementById("overlay").style.display = "none";
+	};
+	function open_img1(){
+		document.getElementById("img_disp1").style.display = "block";
+	};
+	function open_img2(){
+		document.getElementById("img_disp2").style.display = "block";
+	};
+	function open_img3(){
+		document.getElementById("img_disp3").style.display = "block";
+	};
+	function open_img4(){
+		document.getElementById("img_disp4").style.display = "block";
+	};
+	function open_vid1(){
+		document.getElementById("vid_disp1").style.display = "block";
+	};
+	function open_vid2(){
+		document.getElementById("vid_disp2").style.display = "block";
+	};
+	function open_vid3(){
+		document.getElementById("vid_disp3").style.display = "block";
+	};
+	function open_vid4(){
+		document.getElementById("vid_disp4").style.display = "block";
+	};
+	
+	function vids_close(){
+		off();
+		var img = document.getElementsByClassName('common_cls1');
+	    var i;
+	  	for (i = 0; i < img.length; i++) {
+	    img[i].style.display = "none";
+	  };
+}
+</script>
+
+
+</head>
+<body>
+	<div id="overlay"></div>
+	<div class="main over">
+		<div class="_100 over position"><img class="header" src="https://i.postimg.cc/DZLf05sH/header-bg01.png">
+			<div class="absolute1">
+				<img class="logo_img" src="https://i.postimg.cc/rwHq97N7/logo.png">
+			</div>
+			<div class="nav_right absolute2">
+				<ul>
+					<li class="nav_item">PRODUCTS</li>
+					<li class="nav_item">CUSTOMERS</li>
+					<li class="nav_item">NEWS + EVENTS</li>
+					<li class="nav_item">ABOUT US</li>
+				</ul>
+			</div>
+		</div>
+		<div class="subdiv2">
+			<img class="img2" src="https://i.postimg.cc/Bb5vYNnH/banner-slider-01.jpg">
+				<div class="absolute">
+					<h1>META CONSECTETUS</h1>
+					<h2 class="heading2">Nulla Pariatur. Nulla Pariatur.</h2>
+					<h2 class="heading3">Nulla Voluptatem Pariatur.</h2>
+					<button class="btn1">LEARN MORE<img id="arrow" src="https://i.postimg.cc/xTyktjXh/arrow.png"></button>
+					<div class="smallbtn">
+						<img src="https://i.postimg.cc/qv1NHmXG/button-act.png">
+						<img src="https://i.postimg.cc/L89J7dfX/button.png">
+						<img src="https://i.postimg.cc/L89J7dfX/button.png">
+					</div>
+				</div>
+				<div class="subsetdiv _71 position"><!-- <img class="content" src="https://i.postimg.cc/DZLf05sH/header-bg01.png">
+ -->				<div class="subsetdiv1">
+						<p class="paracolour">THE CONNECTED LIFESTYLE</p>
+					</div>
+					<div class="subsetdiv2 _26">
+
+						<div class="borders">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.<br><br></p>
+							<!-- <p class="parapadding"> --><p>Numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam. quis nostrum exercitationem ullam corporis suscipit laboriosam. nisi ut aliquid ex ea commodi consequatur? Quis autem vei eum lure reprehendent qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+							<button class="btn2">LEARN MORE<img id="arrow2" src="https://i.postimg.cc/xTyktjXh/arrow.png"></button>
+						</div>
+						<div class="shiftborder">
+							<img class="height1" max-width="5" src="https://i.postimg.cc/s2tD3bB5/header-bg.png">
+						</div>
+					</div>
+					<div class="subsetdiv3 _34">
+						<div class="_20s">
+							<p class="shifts">LOREM IPSUM</p>
+							<div class="_10">
+								<img class="shifttop"src="https://i.postimg.cc/RC1Vzsvn/lifestyle-thmb-img01.png">
+								<p class="paracolour shift headshift">CONNECT</p>
+								<p class="sub10">Sdolor doloremque of sece ndolemque dolo. <br><br>Edolob aemque of dol doloremque services.</p>
+								<div id="top"class="shiftborder">
+									<img class="height2" max-width="5" src="https://i.postimg.cc/s2tD3bB5/header-bg.png">
+								</div>
+							</div>
+							<div class="_10">
+								<img class="shifttop2"src="https://i.postimg.cc/Yqp226SD/lifestyle-thmb-img02.png">
+								<p class="paracolour shift headshift">EXPERIENCE</p>
+								<p class="sub10">Sdremque aemquexy nwtwdolore redolore <br><br>Holorquery sdoloredoi cremque & riomerque connectivity dolore doloremque.</p>
+								<div id="top2"class="shiftborder">
+									<img class="height3" max-width="5" src="https://i.postimg.cc/s2tD3bB5/header-bg.png">
+								</div>
+							</div>
+						</div>
+						<div id="pad" class="_20s">
+							<p class="shifts">LOREM IPSUM DOLOR</p>
+							<div class="_10">
+								<img class="shifttop3"src="https://i.postimg.cc/kXfJ226J/lifestyle-thmb-img03.png">
+								<p class="paracolour shift headshift">DISCOVER</p>
+								<p class="sub10">Udoioremque compos, doloremque, xzervice quality & doloredata <br><br>Hremque oppurtunities fdoloremque creation.</p>
+								<div id="top3"class="shiftborder">
+									<img class="height4" max-width="5" src="https://i.postimg.cc/s2tD3bB5/header-bg.png">
+								</div>
+							</div>
+							<div class="_10">
+								<img class="shifttop4"src="https://i.postimg.cc/RF794hxz/lifestyle-thmb-img04.png">
+								<p class="paracolour shift headshift">GROW</p>
+								<p class="sub10">Prdoloreure for the fdoloremque service doloremque <br><br>T doloremque and service doloremque.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="maincontent2 over">
+			<div class="_40">
+				<div class="widths">
+					<p class="shifted">OUR CUSTOMERS</p>
+				</div>
+				<div class="sizes">
+					<p>Unde omnis iste natus error sit voluptatem accusantium doloromeque laudantium, totam rem aperiam, aque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem sit aspernatur aut odit aut fugit, sed quia consequuntur.   <a href="#"><span class="green">learn more</span></p></a>
+					<div class="left">
+						<img class="_33" src="https://i.postimg.cc/sxbdpBdd/custmr-logo01.png">
+						<img class="_33" src="https://i.postimg.cc/sXDryd98/custmr-logo02.png">
+						<img class="_33" src="https://i.postimg.cc/dQfYMf7H/custmr-logo03.png">
+						<img class="_33" src="https://i.postimg.cc/RZ75HVgy/custmr-logo04.png">
+						<img class="_33" src="https://i.postimg.cc/6QBsLJS3/custmr-logo05.png">
+						<img class="_33" src="https://i.postimg.cc/vmhJ02Fv/custmr-logo06.png">
+					</div>
+				</div>
+			</div>
+			<div class="_25">
+				<div class="width2">
+					<p class="shifteds">IN THE NEWS</p>
+				</div>
+				<div class="sizes bottoms"><!-- border bottom -->
+					<p class="green color2">Lorem ipsum dolor sit amet, consecteur adipis</p>
+					<p class="colour">July 1, 2011</p>
+					<p>Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo enim ipsam voluptatem quia voluptas sit asper...<a href=""><span class="green">continue reading</span></p></a>
+				</div>
+				<div class="sizes">
+					<p class="green color2">Corem ipsum dolor sit amet, consectetur adipis</p>
+					<p class="colour">June 30,2011</p>
+					<p>Cusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ventatis et quasi architecto beatae vitae dicta sunt explicabo enim ipsam voluptatem quia voluptas sit asper...<a href=""><span class="green">continue reading</span></p></a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="subsetdiv _71 position">
+			<div class="common_cls" id="img_disp1"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><img class="img_set1"src="https://i.postimg.cc/MZNWPfp5/full-photo.png"><div class="img_next"><img onclick="plusSlides(+1)"style="margin-top: 157px"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="images_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls" id="img_disp2"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><img class="img_set2"src="https://i.postimg.cc/T24PzHCr/lifestyle-thmb-img01.png"><div class="img_next"><img onclick="plusSlides(+1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="images_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls" id="img_disp3"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><img class="img_set3"src="https://i.postimg.cc/K8nvgcFN/lifestyle-thmb-img02.png"><div class="img_next"><img onclick="plusSlides(+1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="images_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls" id="img_disp4"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><img class="img_set4"src="https://i.postimg.cc/52c20Qcy/lifestyle-thmb-img03.png"><div class="img_next"><img onclick="plusSlides(+1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="images_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="_50">
+				<div class="line">
+					<p class="paddings">MEDIA RESOURCES-PHOTOS</p>
+				</div>
+
+				<div class="_20 img_over">
+					<img id="img_overlay1" onclick="on();open_img1()" class="img1" src="https://i.postimg.cc/MZNWPfp5/full-photo.png">
+					<img class="_41" onclick="on();open_img2()" src="https://i.postimg.cc/T24PzHCr/lifestyle-thmb-img01.png">
+					<img class="_41" onclick="on();open_img3()" src="https://i.postimg.cc/K8nvgcFN/lifestyle-thmb-img02.png">
+					<img class="_41" onclick="on();open_img4()" src="https://i.postimg.cc/52c20Qcy/lifestyle-thmb-img03.png">
+				</div>
+				<div class="parawid">
+					<p>Cusantium doloremque laundantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo enim ipsam voluptatem quia<a href="#"><span class="green">continue reading</span></p></a>
+				</div>
+			</div>
+
+			<!-- <div class="common_cls1" id="vid_disp1"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><iframe src="https://www.youtube.com/embed/chH3s7ZdXus"></iframe><div class="img_next"><img onclick="plusSlides(1)"style="margin-top: 157px"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="vids_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls1" id="vid_disp2"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><iframe src="https://www.youtube.com/embed/chH3s7ZdXus"></iframe></div><div class="img_next"><img onclick="plusSlides(1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="vids_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls1" id="vid_disp3"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><iframe src="https://www.youtube.com/embed/chH3s7ZdXus"></iframe></div><div class="img_next"><img onclick="plusSlides(1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="vids_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div>
+
+			<div class="common_cls1" id="vid_disp4"><div class="img_prev"><img onclick="plusSlides(-1)" src="https://i.postimg.cc/rmp8bS4n/prev.png"></div><iframe src="https://www.youtube.com/embed/chH3s7ZdXus"></iframe></div><div class="img_next"><img onclick="plusSlides(1)"src="https://i.postimg.cc/3J0wYCcz/next.png"></div><div class="img_cross"><img onclick="vids_close()" src="https://i.postimg.cc/ZqtB1DYf/close.png"></div></div> -->
+			<div class="_50">
+				<div class="line">
+					<p class="paddings">MEDIA RESOURCES-VIDEOS</p>
+				</div>
+				<div class="_20 img_over">
+					<iframe onclick="on();open_vid1()" width="34%" height="107px" src="https://www.youtube.com/embed/chH3s7ZdXus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe onclick="on();open_vid2()" width="34%" height="107px" src="https://www.youtube.com/embed/chH3s7ZdXus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe onclick="on();open_vid3()" width="34%" height="107px" src="https://www.youtube.com/embed/chH3s7ZdXus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe onclick="on();open_vid4()" width="34%" height="107px" src="https://www.youtube.com/embed/chH3s7ZdXus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="parawid">
+					<p>Cusantium doloremque laundantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo enim ipsam voluptatem quia<a href="#"><span class="green">continue reading</span></p></a>
+				</div>
+			</div>
+
+		</div>
+		<div class="position over">
+			<img class="img_wid"src="https://i.postimg.cc/TYWXTcgR/footer-bg.jpg">
+			<div class="absolute3 _70">
+				<ul>
+					<li class="color lefts">HOME</li>
+					<li class="color lefts">PRODUCTS</li>
+					<li class="color lefts">CUSTOMERS</li>
+					<li class="color lefts">NEWS + EVENTS</li>
+					<li class="color lefts">ABOUT US</li>
+				</ul>
+			</div>
+			<div class="subabsolute3 _30">
+				<p>©2011 Company Name. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
